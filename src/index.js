@@ -69,6 +69,9 @@ const Root = () => (
 
 const root = createRoot(document.getElementById('root'));
 root.render(
+  // remove <React.StrictMode> after the development to prevent unnecessary rerendering
+  // <React.StrictMode> is only used for development purpose
+
   <React.StrictMode>
     <Root />
   </React.StrictMode>
